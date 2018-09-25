@@ -1,5 +1,5 @@
 /*!
- * cz-gbk.js v0.1.2
+ * cz-gbk.js v0.1.4
  * Homepage https://github.com/jianguankun/GBK.js
  * License MIT
  */
@@ -42,6 +42,13 @@
 					}
 				}
 				return gbk;
+			},
+			write: function (str, buffer, offset) {
+				var code = gbk.encode(str);
+				for(var i = 0; i < code.length; ++i){
+					buffer[offset++] = code[i];
+				}
+				return code.length;
 			},
 			length: function (str) {
 				str += '';

@@ -1,6 +1,6 @@
 {
   "name": "cz-gbk.js",
-  "version": "0.1.3",
+  "version": "0.1.6",
   "description": "一个小而快的GBK库,支持浏览器",
   "homepage": "https://github.com/jianguankun/GBK.js",
   "main": "index.js",

@@ -31,6 +31,13 @@ var GBK = function (gbk_us) {
 			}
 			return gbk;
 		},
+		write: function (str, buffer, offset) {
+			var code = gbk.encode(str);
+			for(var i = 0; i < code.length; ++i){
+				buffer[offset++] = code[i];
+			}
+			return code.length;
+		},
 		length: function (str) {
 			str += '';
 			var len = 0;
