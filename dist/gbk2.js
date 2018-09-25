@@ -1,6 +1,6 @@
 /*!
  * gbk.js v0.2.3
- * Homepage https://github.com/cnwhy/GBK.js
+ * Homepage https://github.com/jianguankun/GBK.js
  * License MIT
  */
 

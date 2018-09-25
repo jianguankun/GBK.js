@@ -1,6 +1,6 @@
 /*!
  * gbk.js v0.2.3
- * Homepage https://github.com/cnwhy/GBK.js
+ * Homepage https://github.com/jianguankun/GBK.js
  * License MIT
  */
 
@@ -42,6 +42,23 @@
 					}
 				}
 				return gbk;
+			},
+			length: function (str) {
+				str += '';
+				var len = 0;
+				for (var i = 0; i < str.length; i++) {
+					var charcode = str.charCodeAt(i);
+					if (charcode < 0x80) len++;
+					else {
+						var gcode = gbk_us.indexOf(charcode);
+						if (~gcode) {
+							len += 2;
+						} else {
+							len++;
+						}
+					}
+				}
+				return len;
 			}
 		};
 		return gbk;
