@@ -1,5 +1,5 @@
 /*!
- * cz-gbk.js v0.1.1
+ * cz-gbk.js v0.1.2
  * Homepage https://github.com/jianguankun/GBK.js
  * License MIT
  */
